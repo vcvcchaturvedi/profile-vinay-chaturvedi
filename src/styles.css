@@ -117,10 +117,10 @@ input:checked + .slider:before {
   display: inline-block;
 }
 .SectionDescription {
-  margin-left: 140px;
+  margin-left: 40px;
 }
 .s2 {
-  height: 65vmin;
+  height: fit-content;
 }
 .tech-used {
   border: blue 2px solid;

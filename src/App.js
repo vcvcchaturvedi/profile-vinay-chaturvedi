@@ -143,7 +143,7 @@ function App() {
         </section>
       </header>
       <div
-        className="s2 mt-5 mt-4 col-12 col-sm-12 offset-2"
+        className="s2 mt-5 mt-4 row offset-2"
         data-aos="fade-up"
         data-aos-delay="70"
       >
@@ -154,7 +154,7 @@ function App() {
             following:
           </h5>
           <div className="row">
-            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
               <div>
                 <b>LANGUAGES</b>
               </div>
@@ -165,7 +165,7 @@ function App() {
               <div>HTML</div>
               <div>CSS</div>
             </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
               <div>
                 <b>FRAMEWORKS</b>
               </div>
@@ -174,7 +174,7 @@ function App() {
               <div>Node</div>
               <div>Express</div>
             </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
               <div>
                 <b>DATABASES</b>
               </div>
@@ -183,7 +183,7 @@ function App() {
               <div>MySQL</div>
               <div>SQL Server</div>
             </div>
-            <div className="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
               <div>
                 <b>TOOLS</b>
               </div>
@@ -195,7 +195,7 @@ function App() {
         </div>
       </div>
       <div
-        className="s2 col-12 col-sm-12 offset-2"
+        className="s2 mt-5 row offset-2"
         data-aos="fade-up"
         data-aos-delay="70"
       >
