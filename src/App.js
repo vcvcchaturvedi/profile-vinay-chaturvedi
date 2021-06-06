@@ -78,14 +78,14 @@ function App() {
         />
         <span className="slider round"></span>
       </label>
-      <header className={darkMode ? "Header ml-5" : "Header inverse-dark ml-5"}>
+      <header className={darkMode ? "Header " : "Header inverse-dark "}>
         <h1>
           Hi! <img src={hand} height="100" className="handWave"></img>
         </h1>
         <h1>
           I'm <span className="Name">Vinay Chaturvedi</span>
         </h1>
-        <h3>
+        <h4>
           <Typewriter
             onInit={(typewriter) => {
               typewriter.start();
@@ -101,7 +101,7 @@ function App() {
               loop: true,
             }}
           />
-        </h3>
+        </h4>
       </header>
       <div
         className={
@@ -113,7 +113,7 @@ function App() {
         data-aos-delay="90"
       >
         <h4 className="text-left SectionTitle2">ABOUT</h4>
-        <section className="mt-2 mb-4 col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 offset-1 Intro">
+        <section className="mt-2 mb-4 col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 Intro">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-9">
               I am a Full Stack Web Developer proficient in the MERN stack. I
@@ -218,13 +218,13 @@ function App() {
         </div>
       </div>
       <div
-        className="s2 mt-5 pb-5 row offset-2"
+        className="s2 mt-5 row offset-2"
         data-aos="fade-up"
-        data-aos-delay="70"
+        data-aos-delay="90"
       >
         <h4 className="text-left SectionTitle">PROJECTS</h4>
         <div className="SectionDescription">
-          <div className="row">
+          <div className="row mt-5">
             <img className="project-image" src={logoLMS} alt="Project Image" />
             <h5>Learning Management System</h5>
             <p>
@@ -237,13 +237,23 @@ function App() {
                 Backend
               </a>
             </p>
-            <div>
-              <span className="tech-used">React</span>
-              <span className="tech-used">MongoDB</span>
-              <span className="tech-used">Express</span>
-              <span className="tech-used">PassportJS</span>
-              <span className="tech-used">Node</span>
-              <span>
+            <div className="row">
+              <div className="tech-used col-1 col-sm-1 col-md-1 offset-1 offset-md-0 offset-lg-0 offset-xl-0">
+                React
+              </div>
+              <div className="tech-used col-1 col-sm-1 col-md-1 offset-1">
+                MongoDB
+              </div>
+              <div className="tech-used col-1 col-sm-1 col-md-1 offset-1">
+                Express
+              </div>
+              <div className="tech-used col-1 col-sm-1 col-md-1 offset-1">
+                PassportJS
+              </div>
+              <div className="tech-used col-1 col-sm-1 col-md-1 offset-1">
+                Node
+              </div>
+              <span className="mt-4">
                 <a href="#" target="_blank">
                   <b>Live URL</b>
                 </a>
@@ -274,11 +284,13 @@ function App() {
                 Backend
               </a>
             </p>
-            <div>
-              <span className="tech-used">React</span>
-              <span className="tech-used">Express</span>
-              <span className="tech-used">Node</span>
-              <span>
+            <div className="row">
+              <div className="tech-used col-1 offset-1 offset-md-0 offset-lg-0 offset-xl-0">
+                React
+              </div>
+              <div className="tech-used col-1 offset-1">Express</div>
+              <div className="tech-used col-1 offset-1">Node</div>
+              <span className="col-12 mt-4">
                 <a
                   href="https://youtube-downloader-vinay.netlify.app"
                   target="_blank"
@@ -301,12 +313,14 @@ function App() {
                 Backend
               </a>
             </p>
-            <div>
-              <span className="tech-used">React</span>
-              <span className="tech-used">Express</span>
-              <span className="tech-used">Node</span>
-              <span className="tech-used">WebRTC</span>
-              <span>
+            <div className="row">
+              <div className="tech-used col-1 offset-1 offset-md-0 offset-lg-0 offset-xl-0">
+                React
+              </div>
+              <div className="tech-used col-1 offset-1">Express</div>
+              <div className="tech-used col-1 offset-1">Node</div>
+              <div className="tech-used col-1 offset-1">WebRTC</div>
+              <span className="col-12 mt-4">
                 <a href="#" target="_blank">
                   <b>Live URL</b>
                 </a>
@@ -335,7 +349,27 @@ function App() {
           </p>
         </div>
       </div>
-      <span className="footer-left">Vinay Chaturvedi, 2021</span>
+      <div className="row">
+        <div className="col-6 offset-1">Vinay Chaturvedi, 2021</div>
+        <div className="col-4 offset-1 col-sm-4 col-md-3 col-lg-3 col-xl-3 offset-sm-1 offset-md-2 offset-lg-2 offset-xl-2">
+          <a
+            href="https://github.com/vcvcchaturvedi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+          <a
+            className="margina"
+            href="https://www.linkedin.com/in/vinay-chaturvedi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+        </div>
+      </div>
+      {/* <span className="footer-left">Vinay Chaturvedi, 2021</span>
       <span className="footer-right">
         <a
           href="https://github.com/vcvcchaturvedi"
@@ -352,7 +386,7 @@ function App() {
         >
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
         </a>
-      </span>
+      </span> */}
     </div>
   );
 }
