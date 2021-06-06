@@ -1,4 +1,8 @@
 import hand from "./resources/images/hand.png";
+import pic from "./resources/images/Vinay.png";
+import YoutubeDl from "./resources/images/YoutubeDl.png";
+import webRTC from "./resources/images/webRTC.png";
+import logoLMS from "./resources/images/logoLMS.png";
 import "./styles.css";
 import "./App.css";
 import { useEffect, useState } from "react";
@@ -74,7 +78,7 @@ function App() {
         />
         <span className="slider round"></span>
       </label>
-      <header className={darkMode ? "About" : "About inverse-dark"}>
+      <header className={darkMode ? "Header ml-5" : "Header inverse-dark ml-5"}>
         <h1>
           Hi! <img src={hand} height="100" className="handWave"></img>
         </h1>
@@ -98,17 +102,36 @@ function App() {
             }}
           />
         </h3>
-        <section className="mt-5 mb-4 col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 offset-1 Intro">
-          I am a Full Stack Web Developer proficient in the MERN stack. I like
-          to develop applications to better{" "}
-          <b>
-            <i>productivity</i>
-          </b>{" "}
-          and{" "}
-          <b>
-            <i>experience</i>
-          </b>{" "}
-          of users. <hr />
+      </header>
+      <div
+        className={
+          darkMode
+            ? "s2 mt-5 row offset-2 About"
+            : "s2 mt-5 row offset-2 About inverse-dark"
+        }
+        data-aos="fade-up"
+        data-aos-delay="90"
+      >
+        <h4 className="text-left SectionTitle2">ABOUT</h4>
+        <section className="mt-2 mb-4 col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7 offset-1 Intro">
+          <div className="row">
+            <div className="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-9">
+              I am a Full Stack Web Developer proficient in the MERN stack. I
+              like to develop applications to better{" "}
+              <b>
+                <i>productivity</i>
+              </b>{" "}
+              and{" "}
+              <b>
+                <i>experience</i>
+              </b>{" "}
+              of users.{" "}
+            </div>
+            <div className="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-2">
+              <img src={pic} className="pic" alt="logo" />
+            </div>
+          </div>
+          <hr />
           My academic activities include researching on the P=NP? Complexity
           problem and learning new technologies. I am also aware of concepts of
           Artificial Intelligence and Machine Learning.
@@ -141,9 +164,9 @@ function App() {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </section>
-      </header>
+      </div>
       <div
-        className="s2 mt-5 mt-4 row offset-2"
+        className="s2 mt-5 pb-5 row offset-2"
         data-aos="fade-up"
         data-aos-delay="70"
       >
@@ -195,13 +218,14 @@ function App() {
         </div>
       </div>
       <div
-        className="s2 mt-5 row offset-2"
+        className="s2 mt-5 pb-5 row offset-2"
         data-aos="fade-up"
         data-aos-delay="70"
       >
         <h4 className="text-left SectionTitle">PROJECTS</h4>
         <div className="SectionDescription">
           <div className="row">
+            <img className="project-image" src={logoLMS} alt="Project Image" />
             <h5>Learning Management System</h5>
             <p>
               Students and Instructors can leverage this open source platform
@@ -227,6 +251,11 @@ function App() {
             </div>
           </div>
           <div className="row mt-5">
+            <img
+              className="project-image"
+              src={YoutubeDl}
+              alt="Project Image"
+            />
             <h5>YouTube Downloader</h5>
             <p>
               Download your favourite YouTube videos in desired audio/video
@@ -260,6 +289,7 @@ function App() {
             </div>
           </div>
           <div className="row mt-5">
+            <img className="project-image" src={webRTC} alt="Project Image" />
             <h5>Video Conferencing</h5>
             <p>
               Audio/Video with Chat Conferencing solution based on WebRTC,{" "}
@@ -285,6 +315,26 @@ function App() {
           </div>
         </div>
       </div>
+      <div
+        className="s2 mt-5 mb-2 row offset-2"
+        data-aos="fade-up"
+        data-aos-delay="70"
+      >
+        <h4 className="text-left SectionTitle">RESEARCH</h4>
+        <div className="SectionDescription">
+          <p className="col-11 col-sm-10 col-md-9 col-lg-9 col-xl-9">
+            I love researching on the NP Complete Problems like Sudoku, 3SAT,
+            Hamiltonian Cycle and Subset Sum problem and have developed quite a
+            few heuristics on few of those problems.{" "}
+            <a
+              href="https://independent.academia.edu/VinayChaturvedi4"
+              target="_blank"
+            >
+              <b>Link to research</b>
+            </a>
+          </p>
+        </div>
+      </div>
       <span className="footer-left">Vinay Chaturvedi, 2021</span>
       <span className="footer-right">
         <a
@@ -292,7 +342,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} size="4x" />
+          <FontAwesomeIcon icon={faGithub} size="3x" />
         </a>
         <a
           className="margina"
@@ -300,7 +350,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedin} size="4x" />
+          <FontAwesomeIcon icon={faLinkedin} size="3x" />
         </a>
       </span>
     </div>
