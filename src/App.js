@@ -230,10 +230,14 @@ function App() {
             <p>
               Students and Instructors can leverage this open source platform
               for academics, <b>GitHub - </b>
-              <a href="#" target="_blank">
+              <a href="https://github.com/vcvcchaturvedi/lms" target="_blank">
                 Frontend
               </a>
-              <a href="#" className="margina" target="_blank">
+              <a
+                href="https://github.com/vcvcchaturvedi/lms-backend"
+                className="margina"
+                target="_blank"
+              >
                 Backend
               </a>
             </p>
@@ -254,7 +258,7 @@ function App() {
                 Node
               </div>
               <span className="mt-4">
-                <a href="#" target="_blank">
+                <a href="https://learnonline.netlify.app/" target="_blank">
                   <b>Live URL</b>
                 </a>
               </span>
@@ -306,10 +310,17 @@ function App() {
             <p>
               Audio/Video with Chat Conferencing solution based on WebRTC,{" "}
               <b>GitHub - </b>
-              <a href="#" target="_blank">
+              <a
+                href="https://github.com/vcvcchaturvedi/coordinate-at-work"
+                target="_blank"
+              >
                 Frontend
               </a>
-              <a href="#" className="margina" target="_blank">
+              <a
+                href="https://github.com/vcvcchaturvedi/coordinate-at-office-backend"
+                className="margina"
+                target="_blank"
+              >
                 Backend
               </a>
             </p>
@@ -321,7 +332,10 @@ function App() {
               <div className="tech-used col-1 offset-1">Node</div>
               <div className="tech-used col-1 offset-1">WebRTC</div>
               <span className="col-12 mt-4">
-                <a href="#" target="_blank">
+                <a
+                  href="https://coordinate-at-work.netlify.app/"
+                  target="_blank"
+                >
                   <b>Live URL</b>
                 </a>
               </span>
