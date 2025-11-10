@@ -355,7 +355,7 @@ function App() {
             Hamiltonian Cycle and Subset Sum problem and have developed quite a
             few heuristics on few of those problems.{" "}
             <a
-              href="https://independent.academia.edu/VinayChaturvedi4"
+              href="https://amzn.to/4qQu81h"
               target="_blank"
             >
               <b>Link to research</b>
